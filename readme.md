@@ -32,6 +32,14 @@ After completing the challenge, please fill up the form below and share a link o
 - I was going to use AXIOS, but I figured out a way to fetch the data from API with a bearer token.
 - There was quite a few challenges I have experienced while building this, such as getting API data with the authentication as I haven't really done that before. There were also minor stuff I had some difficulty in handling, but I was able to provide some solutions.
 
+Some features I implemented:
+
+- Working like or heart button.
+- Working delete button for notifications, and will display a message when no more notifications to the user.
+- Working counter for the product quantity. It has a restriction where user cannot go less than 0.
+- Prices changes with the number of products inputted.
+- Working sizes buttons for the product, and will not allow the user to select unavailable ones.
+
 # Recommendations
 
 - Feel free to ask questions (jc@smartwave.ph) if any instruction is unclear.
