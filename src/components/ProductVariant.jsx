@@ -35,33 +35,52 @@ function ProductVariant(props) {
     setSizes((prevSizes) => {
       return prevSizes.map((size) => {
         // Make button unclickable if not available.
+        // and only one size can be chosen.
         return size.label === id && size.isAvailable
           ? { ...size, isActive: !size.isActive }
-          : size;
+          : { ...size, isActive: false };
       });
     });
-
-    // Turn off currently ON, then turn ON what was clicked.
   }
+
+  // Clean up the prices
+  const newPrice = parseFloat(product.salePrice.slice(1));
+  const oldPrice = parseFloat(product.originalPrice.slice(1));
+
+  // Put commas on prices
+  const newPriceStr = `$${newPrice.toFixed(2)}`;
+  const newPriceCommaPos = newPrice.toString().length - 2;
+  const newPriceComma =
+    newPriceStr.slice(0, newPriceCommaPos) +
+    "," +
+    newPriceStr.slice(newPriceCommaPos);
+
+  const oldPriceStr = `$${oldPrice.toFixed(2)}`;
+  const oldPriceCommaPos = newPrice.toString().length - 2;
+  const oldPriceComma =
+    oldPriceStr.slice(0, oldPriceCommaPos) +
+    "," +
+    oldPriceStr.slice(oldPriceCommaPos);
 
   return (
     <div className="provar-container">
       <div className="provar-header">
-        <img className="brand-logo" src="" />
+        <img
+          className="brand-logo"
+          src={require(`../images/brand-logo.png`)}
+          alt="brand logo"
+        />
         <p className="brand-name">{product.name}</p>
       </div>
 
       <h1 className="provar-title">{shortDesc}</h1>
 
       <div className="provar-prices">
-        {/* If Counter is 0, do not put the price with comma format. */}
         <p className="provar-new-price">
-          {/* {newPrice.toString().length > 3 ? newPriceComma : newPriceStr} */}
-          {product.salePrice}
+          {newPrice.toString().length > 3 ? newPriceComma : newPriceStr}
         </p>
         <p className="provar-old-price">
-          {/* {oldPrice.toString().length > 3 ? oldPriceComma : oldPriceStr} */}
-          {product.originalPrice}
+          {oldPrice.toString().length > 3 ? oldPriceComma : oldPriceStr}
         </p>
       </div>
 
