@@ -13,6 +13,15 @@ function Card(props) {
     console.log(`User ${!isFavorite ? "liked" : "unliked"} ${props.name}`);
   }
 
+  // Clean up the prices
+  const newPrice = parseFloat(props.price.slice(1));
+
+  // Put commas on prices
+  const priceStr = `$${newPrice.toFixed(2)}`;
+  const priceCommaPos = newPrice.toString().length - 2;
+  const priceComma =
+    priceStr.slice(0, priceCommaPos) + "," + priceStr.slice(priceCommaPos);
+
   return (
     <div className="card">
       <Heart isFilled={isFavorite} handleClick={toggleFavorite} />
@@ -22,7 +31,7 @@ function Card(props) {
           <span className="card-details-desc__name">{props.name}</span>
           {` ${shortDesc}`}
         </p>
-        <p className="card-details-price">{props.price}</p>
+        <p className="card-details-price">{priceComma}</p>
       </div>
     </div>
   );

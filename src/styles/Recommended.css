@@ -17,11 +17,12 @@
 }
 
 .recommended-title {
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
 .recommended-more {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1rem;
   color: #2bb8ae;
   text-decoration: none;

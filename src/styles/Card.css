@@ -22,14 +22,18 @@
 }
 
 .card-details-desc {
+  font-weight: 400;
   font-size: 0.875rem;
+  color: #797a7c;
 }
 
 .card-details-desc__name {
-  font-weight: bold;
+  font-weight: 600;
+  color: #141515;
 }
 
 .card-details-price {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1rem;
+  color: #141515;
 }

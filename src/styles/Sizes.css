@@ -1,10 +1,13 @@
 .sizes-btn {
   border-radius: 7px;
-  width: 80px;
-  height: 45px;
+  width: 90px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0c0d0d;
 }
 
 /* #btn-active {

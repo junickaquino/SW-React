@@ -34,8 +34,8 @@ function Notifications(props) {
       {notifList.length > 0 ? (
         dataNotifs
       ) : (
-        <div>
-          <h1>No New Notifications :)</h1>
+        <div className="no-notif-container">
+          <h1 className="no-notif-msg">No New Notifications 😄</h1>
         </div>
       )}
     </div>

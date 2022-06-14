@@ -14,19 +14,43 @@
   gap: 0.5em;
 }
 
+.brand-logo {
+  width: 30px;
+}
+
+.brand-name {
+  font-weight: 550;
+  font-size: 1.2rem;
+  color: #0c0d0d;
+}
+
+.provar-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #0c0d0d;
+}
+
 .provar-prices {
-  font-weight: bold;
-  font-size: 1rem;
   display: flex;
+  align-items: center;
   gap: 1em;
+}
+
+.provar-new-price {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #141515;
 }
 
 .provar-old-price {
   color: #b3b3b4;
   text-decoration: line-through;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .provar-sizes {
   display: flex;
-  gap: 2em;
+  justify-content: space-between;
+  gap: 1em;
 }

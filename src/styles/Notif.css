@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5em;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid rgb(240, 240, 240);
   padding: 1em 1.5em;
   /* background-color: blue; */
 }
@@ -13,11 +13,10 @@
 }
 
 .notif-details {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   width: 90%;
-  gap: 0.5em;
+  gap: 0.2em;
 }
 
 .notif-icon {
@@ -25,11 +24,20 @@
 }
 
 .notif-title {
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #141515;
+}
+
+.notif-desc {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #797a7c;
 }
 
 .delete-btn {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
   background: none;
   border: none;
   cursor: pointer;
@@ -37,5 +45,5 @@
 }
 
 .notif-card:hover > .delete-btn {
-  display: block;
+  visibility: visible;
 }

@@ -1,17 +1,19 @@
 .proqty-container {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 1.5em;
+  padding: 1em;
   display: flex;
+  align-items: center;
   max-width: 29em;
   gap: 2em;
+  overflow: hidden;
   /* grid-column: 1;
   grid-row: 3 / 5; */
 }
 
 .proqty-img-container {
   min-width: 170px;
-  min-height: 170px;
+  max-height: 170px;
   position: relative;
 }
 
@@ -27,7 +29,7 @@
   right: 5px;
   bottom: 5px;
   background-color: #0bada2;
-  padding: 7px 14px;
+  padding: 4px 14px;
   border-radius: 7px;
   color: #ffffff;
 }
@@ -41,11 +43,14 @@
 }
 
 .proqty-desc {
-  font-size: 0.875rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #797a7c;
 }
 
 .proqty-desc__name {
-  font-weight: bold;
+  font-weight: 600;
+  color: #141515;
 }
 
 .proqty-counter {
@@ -62,14 +67,25 @@
   cursor: pointer;
 }
 
+.counter {
+  font-weight: 600;
+}
+
 .proqty-prices {
-  font-weight: bold;
-  font-size: 1rem;
   display: flex;
   gap: 1em;
+  align-items: center;
+}
+
+.proqty-new-price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #141515;
 }
 
 .proqty-old-price {
   color: #b3b3b4;
   text-decoration: line-through;
+  font-size: 1rem;
+  font-weight: 500;
 }
