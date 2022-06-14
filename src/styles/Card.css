@@ -1,0 +1,35 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  /* max-height: 500px; */
+}
+
+.card-img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-details {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-details-desc {
+  font-size: 0.875rem;
+}
+
+.card-details-desc__name {
+  font-weight: bold;
+}
+
+.card-details-price {
+  font-weight: bold;
+  font-size: 1rem;
+}

@@ -1,0 +1,73 @@
+.proqty-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5em;
+  display: flex;
+  max-width: 29em;
+  gap: 2em;
+}
+
+.proqty-img-container {
+  min-width: 170px;
+  min-height: 170px;
+  position: relative;
+}
+
+.proqty-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.proqty-discount {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: #0bada2;
+  padding: 7px 14px;
+  border-radius: 7px;
+  color: #ffffff;
+}
+
+.proqty-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 0.5em 0;
+}
+
+.proqty-desc {
+  font-size: 0.875rem;
+}
+
+.proqty-desc__name {
+  font-weight: bold;
+}
+
+.proqty-counter {
+  border: 2px solid #ececed;
+  border-radius: 7px;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em;
+}
+
+.proqty-counter > img {
+  cursor: pointer;
+}
+
+.proqty-prices {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  gap: 1em;
+}
+
+.old-price {
+  color: #b3b3b4;
+  text-decoration: line-through;
+}

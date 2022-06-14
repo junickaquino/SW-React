@@ -1,0 +1,30 @@
+.recommended-section {
+  background-color: #ffffff;
+  /* max-width: 560px; */
+  border-radius: 10px;
+  padding: 1.5em;
+  display: inline-block;
+}
+
+.recommended-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4em;
+}
+
+.recommended-title {
+  font-size: 1.5rem;
+}
+
+.recommended-more {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2bb8ae;
+  text-decoration: none;
+}
+
+.card-container {
+  display: flex;
+  gap: 1em;
+}

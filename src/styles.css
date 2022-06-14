@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", "Inter", sans-serif;
+  background-color: #d7d8df;
+}
