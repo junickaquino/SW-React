@@ -2,6 +2,7 @@ import "./styles.css";
 import React from "react";
 import Recommended from "./components/Recommended";
 import ProductQuantity from "./components/ProductQuantity";
+import ProductVariant from "./components/ProductVariant";
 
 export default function App() {
   // Get data from API.
@@ -24,6 +25,7 @@ export default function App() {
     <div className="App">
       {resultProduct && <Recommended productsData={resultProduct} />}
       {resultProduct && <ProductQuantity productsData={resultProduct} />}
+      {resultProduct && <ProductVariant productsData={resultProduct} />}
     </div>
   );
 }

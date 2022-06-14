@@ -1,0 +1,26 @@
+.provar-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  max-width: 29em;
+  gap: 0.8em;
+}
+
+.provar-prices {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  gap: 1em;
+}
+
+.provar-old-price {
+  color: #b3b3b4;
+  text-decoration: line-through;
+}
+
+.provar-sizes {
+  display: flex;
+  gap: 2em;
+}

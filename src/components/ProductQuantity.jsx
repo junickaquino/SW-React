@@ -73,10 +73,10 @@ function ProductQuantity(props) {
 
         <div className="proqty-prices">
           {/* If Counter is 0, do not put the price with comma format. */}
-          <p className="new-price">
+          <p className="proqty-new-price">
             {newPrice.toString().length > 3 ? newPriceComma : newPriceStr}
           </p>
-          <p className="old-price">
+          <p className="proqty-old-price">
             {oldPrice.toString().length > 3 ? oldPriceComma : oldPriceStr}
           </p>
         </div>

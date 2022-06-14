@@ -1,0 +1,20 @@
+.sizes-btn {
+  border-radius: 7px;
+  width: 80px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #btn-active {
+  border: 2px solid #4c4d4d;
+}
+
+.btn-available {
+  border: 2px solid #ececed;
+}
+
+.btn-notavailable {
+  border: 2px solid #f6f6f6;
+} */
