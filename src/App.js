@@ -37,9 +37,9 @@ export default function App() {
   return (
     <div className="App">
       {resultProduct && <Recommended productsData={resultProduct} />}
+      {resultNotifs && <Notifications notifsData={resultNotifs} />}
       {resultProduct && <ProductQuantity productsData={resultProduct} />}
       {resultProduct && <ProductVariant productsData={resultProduct} />}
-      {resultNotifs && <Notifications notifsData={resultNotifs} />}
     </div>
   );
 }

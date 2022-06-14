@@ -9,7 +9,6 @@ function Notifications(props) {
   const firstFourNotifs = dataArr.slice(0, 4);
 
   const [notifList, setNotifList] = React.useState(firstFourNotifs);
-  console.log(notifList);
 
   const dataNotifs = notifList.map((item) => {
     return (
@@ -24,14 +23,23 @@ function Notifications(props) {
   });
 
   function deleteNotif(event, id) {
-    console.log("Delete!", id);
     event.stopPropagation();
     setNotifList((prevNotif) => {
       return prevNotif.filter((notif) => notifList.indexOf(notif) !== id);
     });
   }
 
-  return <div className="notifs-container">{dataNotifs}</div>;
+  return (
+    <div className="notifs-container">
+      {notifList.length > 0 ? (
+        dataNotifs
+      ) : (
+        <div>
+          <h1>No New Notifications :)</h1>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default Notifications;

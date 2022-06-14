@@ -5,6 +5,8 @@
   display: flex;
   max-width: 29em;
   gap: 2em;
+  /* grid-column: 1;
+  grid-row: 3 / 5; */
 }
 
 .proqty-img-container {

@@ -65,7 +65,7 @@ function ProductQuantity(props) {
           />
           <p className="counter">{counter}</p>
           <img
-            src={require(`../images/icon-minus.png`)}
+            src={require(`../images/icons-plus.png`)}
             alt=""
             onClick={increaseCounter}
           />

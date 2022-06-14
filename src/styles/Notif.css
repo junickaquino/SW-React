@@ -3,13 +3,39 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5em;
-  background-color: blue;
+  border-bottom: 1px solid green;
+  padding: 1em 1.5em;
+  /* background-color: blue; */
+}
+
+.notif-card:last-child {
+  border-bottom: none;
 }
 
 .notif-details {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   width: 90%;
   gap: 0.5em;
+}
+
+.notif-icon {
+  align-self: start;
+}
+
+.notif-title {
+  font-size: 20px;
+}
+
+.delete-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: start;
+}
+
+.notif-card:hover > .delete-btn {
+  display: block;
 }
