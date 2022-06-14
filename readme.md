@@ -24,9 +24,13 @@ Add an `Authorization` header to your requests using this token:
 
 After completing the challenge, please fill up the form below and share a link of your work to jc@smartwave.ph
 
-** Name: **
+** Name: Junick Marco Aquino**
 
 ** Comments: ** Any comments on the decisions you made regarding your code that you would like us to know (ex. if you installed packages, why did you choose to use the ones that you did).
+
+- I did not add any dependencies aside from the existing reaxt, react-dom, and react-scripts.
+- I was going to use AXIOS, but I figured out a way to fetch the data from API with a bearer token.
+- There was quite a few challenges I have experienced while building this, such as getting API data with the authentication as I haven't really done that before. There were also minor stuff I had some difficulty in handling, but I was able to provide some solutions.
 
 # Recommendations
 
