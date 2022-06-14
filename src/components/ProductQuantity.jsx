@@ -27,7 +27,7 @@ function ProductQuantity(props) {
 
   // Set Prices in respective to the quantity.
   const newPrice = parseFloat(product.salePrice.slice(1)) * counter;
-  const oldPrice = parseFloat(product.originalPrice.slice(1)) * counter;
+  let oldPrice = parseFloat(product.originalPrice.slice(1)) * counter;
 
   // Put commas on prices
   const newPriceStr = `$${newPrice.toFixed(2)}`;
@@ -74,10 +74,10 @@ function ProductQuantity(props) {
         <div className="proqty-prices">
           {/* If Counter is 0, do not put the price with comma format. */}
           <p className="new-price">
-            {counter !== 0 ? newPriceComma : newPriceStr}
+            {newPrice.toString().length > 3 ? newPriceComma : newPriceStr}
           </p>
           <p className="old-price">
-            {counter !== 0 ? oldPriceComma : oldPriceStr}
+            {oldPrice.toString().length > 3 ? oldPriceComma : oldPriceStr}
           </p>
         </div>
       </div>
