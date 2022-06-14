@@ -1,0 +1,15 @@
+.notif-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5em;
+  background-color: blue;
+}
+
+.notif-details {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.5em;
+}
